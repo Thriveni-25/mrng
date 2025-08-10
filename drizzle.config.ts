@@ -5,7 +5,7 @@ export default defineConfig({
   out: './drizzle',
   dialect: 'postgresql',
   dbCredentials: {
-    url: 'postgresql://postgres:amulya@localhost:5432/mrng',
+    url:process.env.DATABASE_URL!,
     ssl:false,
   }
 });
